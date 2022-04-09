@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template: 60px 200px 40px / repeat(12, 1fr);
+  grid-template-areas: 
+    ". h h h h h h h h h h h"
+    "a m m m m m m m m m m m"
+    ". f f f f f f f f f f f";
+}
+
+header{
+  grid-area: h;
+}
+
+main {
+  grid-area: m;
+}
+
+aside {
+  grid-area: a;
+}
+
+footer {
+  grid-area: f;
+}
+
+@media(max-width: 768px){
+  .container {
+    grid-template-areas: 
+      "h h a a a a a a a a a a"
+      "m m m m m m m m m m m m"
+      "f f f f f f f f f f f f";
+  }
+}

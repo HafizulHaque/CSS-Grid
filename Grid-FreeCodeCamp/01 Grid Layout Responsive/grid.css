@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template: 60px 200px 40px / repeat(12, 1fr);
+}
+
+header, footer {
+  grid-column: 2  / -1;
+}
+
+main {
+  grid-column: 2 / -1;
+}
+
+aside {
+  grid-row: 1 / 4;
+}
