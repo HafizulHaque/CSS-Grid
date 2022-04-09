@@ -15,6 +15,7 @@ html, body {
 .wrapper > div {
   background: #eee;
   padding: 1em;
+  /* overflow: scroll; */
 }
 
 .wrapper > div:nth-child(even){

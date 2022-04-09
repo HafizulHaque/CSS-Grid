@@ -12,11 +12,15 @@ html, body {
   box-sizing: border-box;
 }
 
-.wrapper > div {
-  background: #eee;
+.box {
+  background: #ddd;
   padding: 1em;
+  border: 1px solid #ccc;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
-.wrapper > div:nth-child(even){
-  background: #ddd;
+.box:nth-child(even){
+  background-color: #eee;
 }

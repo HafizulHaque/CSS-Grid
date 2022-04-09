@@ -1,0 +1,17 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  grid-auto-rows: minmax(400px, auto);
+}
+
+.nested {
+  display: grid;
+}
+
+.nested > div {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
