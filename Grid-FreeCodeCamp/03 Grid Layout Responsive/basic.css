@@ -11,22 +11,15 @@ html, body {
   box-sizing: border-box;
 }
 
-header, aside, main, footer {
+.box {
   padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  border: 1px solid #ccc;
+  background: #ddd;
 }
 
-header, footer {
-  background: #a85a32;
-}
-
-aside {
-  background: #5e2d8c;
-}
-
-main {
-  background: #2d8c5b;
+.box:nth-child(odd){
+  background: #eee;
 }
