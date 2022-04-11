@@ -1,0 +1,35 @@
+article {
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+}
+
+article > * {
+  grid-column: 2;
+  min-width: 0;
+}
+
+article > img {
+  width: 100%;
+}
+
+article > img:hover {
+  grid-column: 1 / -1;
+}
+
+p.code-explain {
+  grid-column: 3;
+  padding-left: 10px;
+  line-height: 2;
+  font-size: 0.8em;
+  color: #999;
+}
+
+blockquote {
+  grid-column: 1 / -1;
+  color: #666;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 20px 5px;
+  border-left: 8px solid #666;
+  padding-left: 20px;
+}

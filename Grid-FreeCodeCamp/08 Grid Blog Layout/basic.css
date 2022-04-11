@@ -3,28 +3,21 @@
 html, body {
   padding: 0;
   margin: 0;
+  line-height: 1.4;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 1.4;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-.container {
-  border: 1px solid #aaa;
-  margin-bottom: 20px;
+header {
+  padding: 40px 0;
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ddd;
-  border: 1px solid #ccc;
+header > h1 {
+  color: red;
+  text-align: center;
 }
 
-.box:nth-child(even){
-  background: #eee;
-}
